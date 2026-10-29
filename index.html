@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GADA ELECTRONICS</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <header>
+        <h1>GADA ELECTRONICS</h1>
+        <p>Your One-Stop Electronics Store</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">My Cart</a>
+        </nav>
+    </header>
+
+    <section id="home" class="welcome">
+        <h2><u>Welcome to GADA ELECTRONICS</u></h2>
+        <p>Discover the latest gadgets at great prices!</p>
+    </section>
+
+    <h2 id="products" class="section-title">Our Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+                 alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p class="price">₹15,000</p>
+            <label>Quantity:</label>
+            <div class="quantity">
+                <button onclick="changeQty('q1', -1)">−</button>
+                <input type="number" id="q1" value="1" min="1" max="99">
+                <button onclick="changeQty('q1', 1)">+</button>
+            </div>
+            <button class="add-btn"
+                onclick="addToCart('Smartphone', 15000, 'q1')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80"
+                 alt="Laptop">
+            <h3>Laptop</h3>
+            <p class="price">₹45,000</p>
+            <label>Quantity:</label>
+            <div class="quantity">
+                <button onclick="changeQty('q2', -1)">−</button>
+                <input type="number" id="q2" value="1" min="1" max="99">
+                <button onclick="changeQty('q2', 1)">+</button>
+            </div>
+            <button class="add-btn"
+                onclick="addToCart('Laptop', 45000, 'q2')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                 alt="Headphones">
+            <h3>Headphones</h3>
+            <p class="price">₹2,000</p>
+            <label>Quantity:</label>
+            <div class="quantity">
+                <button onclick="changeQty('q3', -1)">−</button>
+                <input type="number" id="q3" value="1" min="1" max="99">
+                <button onclick="changeQty('q3', 1)">+</button>
+            </div>
+            <button class="add-btn"
+                onclick="addToCart('Headphones', 2000, 'q3')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                 alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <p class="price">₹3,500</p>
+            <label>Quantity:</label>
+            <div class="quantity">
+                <button onclick="changeQty('q4', -1)">−</button>
+                <input type="number" id="q4" value="1" min="1" max="99">
+                <button onclick="changeQty('q4', 1)">+</button>
+            </div>
+            <button class="add-btn"
+                onclick="addToCart('Smartwatch', 3500, 'q4')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <section id="cart" class="cart-section">
+        <h2>My Shopping Cart</h2>
+
+        <div id="cartItems">Your cart is empty.</div>
+
+        <div class="total-row">
+            <h3>Total Amount</h3>
+            <h3>₹<span id="total">0</span></h3>
+        </div>
+
+        <button class="checkout-btn" onclick="placeOrder()">
+            Place Order
+        </button>
+    </section>
+
+    <footer>
+        <h3>GADA ELECTRONICS</h3>
+        <p>Thank you for shopping with us!</p>
+        <p>&copy; 2026 GADA ELECTRONICS</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
+c
